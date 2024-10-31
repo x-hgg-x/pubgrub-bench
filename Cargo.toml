@@ -1,0 +1,21 @@
+[package]
+name = "pubgrub-bench"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.91"
+cargo = { git = "https://github.com/x-hgg-x/cargo", branch = "pubgrub" }
+crates-index = { version = "3.2.0", default-features = false, features = [
+    "git-performance",
+    "parallel",
+] }
+pubgrub = { git = "https://github.com/x-hgg-x/pubgrub", branch = "perf" }
+rayon = "1.10.0"
+rustc-hash = "2.0.0"
+semver = "1.0.23"
+
+[dev-dependencies]
+tikv-jemallocator = "0.6.0"
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"

@@ -19,4 +19,8 @@ tracing = "0.1.40"
 tracing-subscriber = "0.3.18"
 
 [dev-dependencies]
+cargo-platform = { git = "https://github.com/x-hgg-x/cargo", branch = "pubgrub" }
+cargo-util = { git = "https://github.com/x-hgg-x/cargo", branch = "pubgrub" }
 indicatif = { version = "0.17.9", features = ["rayon"] }
+proptest = "1.5.0"
+varisat = "0.2.2"
